@@ -2,7 +2,7 @@
 
 namespace Alphavel\Logging;
 
-use Alphavel\Core\ServiceProvider;
+use Alphavel\Framework\ServiceProvider;
 
 class LoggingServiceProvider extends ServiceProvider
 {
