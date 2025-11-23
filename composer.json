@@ -1,6 +1,7 @@
 {
     "name": "alphavel/logging",
     "description": "PSR-3 compliant logging package for Alphavel Framework",
+    "version": "1.0.0",
     "type": "library",
     "keywords": ["logging", "psr-3", "logger", "alphavel"],
     "license": "MIT",
