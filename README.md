@@ -1,31 +1,46 @@
 # Alphavel Logging
 
-Logging package for Alphavel Framework.
+> PSR-3 compliant logger with multiple channels
 
-## Installation
+[![PHP Version](https://img.shields.io/badge/php-%3E%3D8.4-blue.svg)](https://php.net)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+
+## ✨ Features
+
+- 📝 **PSR-3 compliant** - Standard logger interface
+- 📁 **Multiple channels** - File, stdout, stderr
+- 🎯 **Laravel-compatible** - Familiar API
+- 🚀 **Swoole-safe** - Coroutine-compatible
+
+## 📦 Installation
 
 ```bash
 composer require alphavel/logging
 ```
 
-## Configuration
+## 🚀 Quick Start
 
-After installation, add these variables to your `.env` file:
+```php
+use Log;
 
-```env
-LOG_CHANNEL=daily
-LOG_LEVEL=debug
-LOG_PATH=storage/logs
+// Log levels (PSR-3)
+Log::emergency('System down');
+Log::alert('Immediate action needed');
+Log::critical('Critical condition');
+Log::error('Runtime error');
+Log::warning('Warning message');
+Log::notice('Normal but significant');
+Log::info('Informational message');
+Log::debug('Debug information');
+
+// With context
+Log::info('User logged in', ['user_id' => 123]);
 ```
 
-Available log levels: `debug`, `info`, `notice`, `warning`, `error`, `critical`, `alert`, `emergency`
+## 📚 Documentation
 
-See `.env.example` in this package for a complete configuration template.
+**Full documentation**: https://github.com/alphavel/documentation/blob/master/packages/logging/README.md
 
-## Documentation
-
-Visit [Alphavel Documentation](https://github.com/alphavel) for complete documentation.
-
-## License
+## 📄 License
 
 MIT License
